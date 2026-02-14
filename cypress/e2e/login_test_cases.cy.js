@@ -40,7 +40,6 @@ describe('OrangeHRM Login Automation Based on Excel Test Cases', () => {
   });
 
   // TS002: Forgot Password
-
   it('TC005 - Verifikasi link "Forgot your password?"', () => {
     // Action: Klik link "Forgot your password?"
     cy.contains('p', 'Forgot your password?').click();
@@ -50,7 +49,6 @@ describe('OrangeHRM Login Automation Based on Excel Test Cases', () => {
   });
 
   // TS003: UI Validation 
-
   it('TC006 - Masking Password', () => {
     cy.get('input[name="password"]').type('admin123');
 
@@ -59,7 +57,6 @@ describe('OrangeHRM Login Automation Based on Excel Test Cases', () => {
   });
 
   // TS004: Social Media Links
-
   it('TC007 - Redirect ke LinkedIn OrangeHRM', () => {
     const linkedinSelector = 'a[href="https://www.linkedin.com/company/orangehrm/mycompany/"]';
     cy.get(linkedinSelector)
