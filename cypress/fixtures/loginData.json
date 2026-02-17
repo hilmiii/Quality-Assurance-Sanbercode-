@@ -1,0 +1,18 @@
+{
+  "url": "/web/index.php/auth/login",
+  "validUser": "Admin",
+  "validPass": "admin123",
+  "invalidUser": "SalahUser",
+  "invalidPass": "SalahPass",
+  "messages": {
+    "required": "Required",
+    "invalid": "Invalid credentials"
+  },
+  "urls": {
+    "dashboard": "/dashboard",
+    "resetPassword": "requestPasswordResetCode"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/orangehrm/mycompany/"
+  }
+}
