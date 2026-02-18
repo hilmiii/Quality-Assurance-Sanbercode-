@@ -17,8 +17,6 @@ describe('OrangeHRM Login Automation (Refactored)', () => {
 
   // --- TC 1: Login Valid (API Call - Dynamic) ---
   it('TC001 - Login Valid (Intercept: API Validate)', () => {
-    // API Call 'validate' SELALU terjadi saat tombol login diklik. 
-    // AMAN untuk menggunakan cy.wait().
     cy.intercept('POST', '**/auth/validate').as('loginReq');
 
     cy.get('input[name="username"]').type('Admin');
@@ -31,7 +29,6 @@ describe('OrangeHRM Login Automation (Refactored)', () => {
 
   // --- TC 2: Invalid Username (Localization - Semi Dynamic) ---
   it('TC002 - Login Username Salah (Intercept: Localization Messages)', () => {
-    // Kita define intercept untuk memenuhi syarat soal
     cy.intercept('GET', '**/core/i18n/messages').as('i18n');
     cy.get('input[name="username"]').type('SalahUser');
     cy.get('input[name="password"]').type('admin123');
