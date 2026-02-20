@@ -1,0 +1,11 @@
+{
+  "validUser": "Admin",
+  "validPass": "admin123",
+  "invalidUser": "BukanAdmin",
+  "invalidPass": "salah123",
+  "search": {
+    "empName": "Peter",
+    "jobTitle": "Chief Executive Officer",
+    "location": "New York"
+  }
+}
